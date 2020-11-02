@@ -47,6 +47,10 @@ body {
 .container {
   width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between  
 }
 
 // ---HEADER---
@@ -289,6 +293,10 @@ body {
   &:hover {
     background: #d3c1ad;
   }
+  &:active{
+    background: #736357;
+
+  }
 }
 .carousel_pagination {
   margin: 0 auto;
@@ -376,6 +384,7 @@ body {
   color: #555555;
   text-align: center;
   margin: 0;
+  width: 100%;
 }
 .ideas_txt {
   font-family: "RalewayLight";
@@ -391,6 +400,7 @@ body {
   position: relative;
   z-index: 1;
   height: 480px;
+  width: 100%;
   overflow: hidden;
 }
 .ideas_photo:nth-child(2) {
@@ -419,7 +429,53 @@ body {
   top: 80px;
   right: 0;
   z-index: -1;
-  &:hover{
-    z-index: 1;
+}
+
+// ---PURCHASE---
+.purchase {
+    background: #3b2a21 linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+    padding: 45px 0;
+}
+.purchase_txt{
+  margin-left: 25px;
+}
+.purchase-title{
+  font-size: 28px;
+  color: $white;
+  &_g{
+    color: $gold;
+  }
+}
+.purchase-text{
+  font-family: "RalewayLight";
+  font-size: 18px;
+  color: #615855;  
+  margin: 0;
+}
+.purchase_btn {
+  display: block;
+  width: 170px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $gold;
+  box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+  border-bottom: 3px solid #736357;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  word-break: break-all;
+  outline: none;
+  margin-right: 25px;
+  &:hover {
+    background: #d3c1ad;
+    cursor: pointer;
+  }
+  &:active{
+    background: #736357;
+
   }
 }

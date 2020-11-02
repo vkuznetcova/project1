@@ -32,6 +32,17 @@ body {
 .container {
   width: 1230px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header {
@@ -347,6 +358,10 @@ body {
   background: #d3c1ad;
 }
 
+.carousel-btn:active {
+  background: #736357;
+}
+
 .carousel_pagination {
   margin: 0 auto;
   padding-bottom: 40px;
@@ -461,6 +476,7 @@ body {
   color: #555555;
   text-align: center;
   margin: 0;
+  width: 100%;
 }
 
 .ideas_txt {
@@ -478,6 +494,7 @@ body {
   position: relative;
   z-index: 1;
   height: 480px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -509,6 +526,59 @@ body {
   z-index: -1;
 }
 
-.ideas_photo:nth-child(3):hover {
-  z-index: 1;
+.purchase {
+  background: #3b2a21 -webkit-gradient(linear, left bottom, left top, from(#211b19), to(#4e3427));
+  background: #3b2a21 linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+  padding: 45px 0;
+}
+
+.purchase_txt {
+  margin-left: 25px;
+}
+
+.purchase-title {
+  font-size: 28px;
+  color: #fff;
+}
+
+.purchase-title_g {
+  color: #998675;
+}
+
+.purchase-text {
+  font-family: "RalewayLight";
+  font-size: 18px;
+  color: #615855;
+  margin: 0;
+}
+
+.purchase_btn {
+  display: block;
+  width: 170px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #998675;
+  -webkit-box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+          box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+  border-bottom: 3px solid #736357;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  word-break: break-all;
+  outline: none;
+  margin-right: 25px;
+}
+
+.purchase_btn:hover {
+  background: #d3c1ad;
+  cursor: pointer;
+}
+
+.purchase_btn:active {
+  background: #736357;
 }
