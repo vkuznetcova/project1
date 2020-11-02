@@ -565,6 +565,7 @@ body {
   background-color: #998675;
   -webkit-box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
           box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+  border: none;
   border-bottom: 3px solid #736357;
   text-decoration: none;
   text-transform: uppercase;
@@ -580,5 +581,212 @@ body {
 }
 
 .purchase_btn:active {
+  background: #736357;
+}
+
+.project-title {
+  width: 100%;
+  font-family: "RalewayMedium";
+  font-size: 30px;
+  color: #555555;
+  text-align: center;
+}
+
+.project-txt {
+  max-width: 755px;
+  font-family: "RalewayLight";
+  font-size: 18px;
+  line-height: 28px;
+  color: #555555;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project-nav {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-nav_item {
+  outline: none;
+  padding: 8px 20px;
+  color: #555555;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  font-family: "RalewayLight";
+  font-size: 14px;
+}
+
+.project-nav_item-active, .project-nav_item:active {
+  background: #998675;
+  color: #fff;
+}
+
+.project-nav_item:hover {
+  background: #d3c1ad;
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-wrp {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.project-box {
+  max-width: 33.3%;
+  padding-bottom: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.project-box:nth-child(3n) {
+  padding-right: 0;
+}
+
+.item-img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.item-wrp {
+  background: #fbfaf8;
+  padding: 30px;
+  position: relative;
+}
+
+.item-wrp::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 13px solid transparent;
+  border-bottom: 13px solid #fbfaf8;
+  background: transparent;
+  position: absolute;
+  top: -25px;
+  left: 25px;
+}
+
+.item-title {
+  display: block;
+  width: 100%;
+  font-family: "RalewayRegular";
+  font-size: 20px;
+  color: #c7b299;
+  padding-bottom: 5px;
+}
+
+.item-txt {
+  display: block;
+  width: 100%;
+  font-family: "RalewayLight";
+  color: #d1d1d1;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.project-link, .project-search {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  fill: #fff;
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+.project-link:hover, .project-search:hover {
+  fill: #c7b299;
+}
+
+.project-link:active, .project-search:active {
+  fill: #998675;
+}
+
+.project-search {
+  left: 50%;
+}
+
+.project-box:hover .item-img {
+  -webkit-filter: brightness(35%);
+          filter: brightness(35%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.project-box:hover .item-wrp {
+  background: #362f2a;
+}
+
+.project-box:hover .item-wrp::after {
+  border: transparent;
+}
+
+.project-box:hover .item-title {
+  color: #fff;
+}
+
+.project-box:hover .item-txt {
+  color: #c7b299;
+}
+
+.project-box:hover .project-link, .project-box:hover .project-search {
+  display: block;
+  cursor: pointer;
+}
+
+.project-btn {
+  margin: 25px auto 75px;
+  display: block;
+  width: 175px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #998675;
+  -webkit-box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+          box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+  border: none;
+  border-bottom: 3px solid #736357;
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  word-break: break-all;
+}
+
+.project-btn:hover {
+  background: #d3c1ad;
+  cursor: pointer;
+}
+
+.project-btn:active {
   background: #736357;
 }
